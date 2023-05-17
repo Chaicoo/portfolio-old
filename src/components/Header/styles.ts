@@ -57,9 +57,9 @@ export const LinksButtons = styled.div`
         color: var(--titles);
         font-size: 1.2rem;
         padding: 0.4rem 1rem;
-        border-radius: 1.6rem;
+        border-radius: 1.4rem;
         background: var(--accent);
-        transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.8s ease-in-out;
 
         &:hover {
             opacity: 0.8;

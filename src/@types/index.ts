@@ -1,16 +1,3 @@
-export interface APIuser {
-    login: string;
-    name: string;
-    followers: number;
-    following: number;
-    public_repos: number;
-    avatar_url: string;
-    blog?: string;
-    company?: string;
-    location?: string;
-    email?: string;
-}
-
 export interface APIRepo {
     name: string;
     owner: {

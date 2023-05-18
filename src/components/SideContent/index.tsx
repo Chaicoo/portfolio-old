@@ -1,22 +1,41 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import {
     Container,
+    ImageContainer,
+    Navigation,
+    Text,
     Line,
-    HeartIcon,
     SocialMedia,
-    CopyRight,
     InstagramIcon,
     LinkedinIcon,
     GithubIcon,
     MailIcon,
-    MadeBy,
 } from "./styles";
+import { Link } from "react-router-dom";
 
-export const Footer: React.FC = () => {
+export const SideContent: React.FC = () => {
+    function handleToggle() {
+        if (window.toggleActiveMenu) window.toggleActiveMenu();
+    }
+
     return (
         <Container>
-            <Line />
+            <Navigation>
+                <button className="action--close" onClick={handleToggle}>
+                    ✕
+                </button>
+            </Navigation>
+
+            <ImageContainer>
+                <img src="src/assets/profile.jpeg" alt="profile" />
+            </ImageContainer>
+
+            <Text>
+                <h2>Francisco Gabriel Noleto Lima</h2>
+                <p>Desenvolvedor Front-End Jr</p>
+                <Line />
+            </Text>
             <SocialMedia>
                 <Link to="https://github.com/Chaicoo">
                     <GithubIcon />
@@ -31,15 +50,6 @@ export const Footer: React.FC = () => {
                     <MailIcon />
                 </Link>
             </SocialMedia>
-            <MadeBy>
-                <span>Feito com</span>
-                <HeartIcon />
-                <span>por </span>
-                <Link to="https://github.com/Chaicoo">Francisco</Link>
-            </MadeBy>
-            <CopyRight>
-                <p>© 2023. Todos os direitos reservados.</p>
-            </CopyRight>
         </Container>
     );
 };

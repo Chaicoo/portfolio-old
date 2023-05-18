@@ -56,7 +56,7 @@ export const LinksButtons = styled.div`
         text-decoration: none;
         color: var(--titles);
         font-size: 1.2rem;
-        padding: 0.4rem 1rem;
+        padding: 0.3rem 0.9rem;
         border-radius: 1.4rem;
         background: var(--accent);
         transition: opacity 0.8s ease-in-out;

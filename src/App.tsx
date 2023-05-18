@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import GlogalStyles from "./styles/GlobalStyles";
 import { Header, Footer } from "./components";
-import { Home, About } from "./pages";
+import { Home, Projects } from "./pages";
 import { ThemeName, themes } from "./styles/index";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
                 <Header themeName={themeName} setThemeName={setThemeName} />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="projects" element={<About />} />
+                    <Route path="projects" element={<Projects />} />
                 </Routes>
                 <Footer />
                 <GlogalStyles />

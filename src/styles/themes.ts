@@ -10,7 +10,7 @@ export const themes = {
 
         header: "#24292e",
         logo: "#fff",
-        username: "#666",
+        "text-secondary": "#666",
         search: "rgba(255, 255, 255, 0.13)",
         placeholder: "hsla(0,0%,100%,.75)",
         icon: "#6a737d",
@@ -37,7 +37,7 @@ export const themes = {
 
         header: "#24292e",
         logo: "#fff",
-        username: "#9b9b9b",
+        "text-secondary": "#9b9b9b",
         search: "#151515",
         placeholder: "#c6c6c6",
         icon: "#9b9b9b",

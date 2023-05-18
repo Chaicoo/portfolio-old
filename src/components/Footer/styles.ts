@@ -49,7 +49,7 @@ export const MadeBy = styled.p`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 4px;
 
     > a {
         transition: opacity 0.2s;
@@ -80,6 +80,7 @@ const IconCSS = css`
 export const HeartIcon = styled(AiFillHeart)`
     width: 24px;
     height: 24px;
+    margin-bottom: -4px;
     fill: var(--purple);
 `;
 

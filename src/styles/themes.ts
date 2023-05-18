@@ -22,7 +22,7 @@ export const themes = {
         moon: "#2b7489",
 
         background: "#eee8d5",
-        titles: "#D6E1DF",
+        titles: "#6a737d",
         //titles: "#8e8a99",
         accent: "#0880AE",
     },

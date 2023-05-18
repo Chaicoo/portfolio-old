@@ -4,11 +4,15 @@ import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 export const Container = styled.div`
     display: flex;
     align-items: center;
-    background: var(--header);
+    background: var(--background);
     padding: 12px 16px;
     border-bottom: 1px solid var(--accent);
     height: 4.5rem;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 `;
 
 export const SunIcon = styled(BsFillSunFill)`

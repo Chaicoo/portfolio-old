@@ -16,44 +16,9 @@ export const Container = styled.div`
     }
 `;
 
-export const Navigation = styled.nav`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 32px;
-    min-height: 60px;
-
-    > h1 {
-        display: flex;
-        align-items: center;
-
-        > span {
-            color: var(--color-quaternary);
-            font-size: 28px;
-            margin-left: 12px;
-        }
-    }
-
-    > button {
-        background: none;
-        border: none;
-        color: var(--color-quaternary);
-        font-size: 24px;
-        font-weight: 600;
-        outline: 0;
-        cursor: pointer;
-    }
-
-    @media (min-width: 1024px) {
-        > h1 {
-            display: none;
-        }
-    }
-`;
-
 export const ImageContainer = styled.div`
     text-align: center;
-    margin-top: 36px;
+    margin-top: 100px;
 
     > img {
         width: 260px;

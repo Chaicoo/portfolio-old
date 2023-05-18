@@ -14,9 +14,6 @@ export const Container = styled.div`
     padding: 24px 32px;
     margin-top: auto;
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
 `;
 
 export const Line = styled.div`

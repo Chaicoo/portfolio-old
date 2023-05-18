@@ -14,7 +14,7 @@ export const Projects: React.FC = () => {
                     "https://api.github.com/users/Chaicoo/repos"
                 );
                 const filteredRepos = response.data.filter(
-                    (repo) => repo.name.toLowerCase() !== "readme" && !repo.fork
+                    (repo) => repo.name !== "Chaicoo" && !repo.fork
                 );
 
                 setRepos(filteredRepos);

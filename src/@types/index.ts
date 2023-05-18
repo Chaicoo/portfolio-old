@@ -8,4 +8,5 @@ export interface APIRepo {
     html_url: string;
     description: string;
     language?: string;
+    fork: boolean;
 }

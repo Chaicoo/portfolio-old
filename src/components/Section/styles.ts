@@ -15,9 +15,6 @@ export const Container = styled.div`
 			--heading-font-size: 72px;
 		}
 	}
-
-	background: var(--bg-color);
-	position: relative;
 `;
 
 export const Content = styled.div`

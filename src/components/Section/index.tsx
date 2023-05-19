@@ -1,23 +1,15 @@
 import React from "react";
 
-import {
-    Container,
-    Content,
-} from "./styles";
+import { Container, Content } from "./styles";
 
-interface Props {
-    title: string;
-    description: string;
-}
+type Props = {
+    children: React.ReactNode;
+};
 
-export const Section: React.FC<Props> = ({ title, description }) => {
-    
+export const Section: React.FC<Props> = ({ children }) => {
     return (
         <Container>
-            <Content>
-                <h2>{title}</h2>
-                <p>{description}</p>
-            </Content>
+            <Content>{children}</Content>
         </Container>
     );
 };

@@ -12,12 +12,13 @@ import {
     MailIcon,
 } from "./styles";
 import { Link } from "react-router-dom";
+import { DownloadButton } from "..";
 
 export const SideContent: React.FC = () => {
     return (
         <Container>
             <ImageContainer>
-                <img src="src/assets/profile.jpeg" alt="profile" />
+                <img src="https://avatars.githubusercontent.com/u/55364296?v=4" alt="profile" />
             </ImageContainer>
 
             <Text>
@@ -39,6 +40,7 @@ export const SideContent: React.FC = () => {
                     <MailIcon />
                 </Link>
             </SocialMedia>
+            <DownloadButton />
         </Container>
     );
 };

@@ -1,26 +1,20 @@
 import React from "react";
 import { SideContainer, SideContent, Section } from "../../components";
 import { Container } from "./styles";
+import { AboutSection, SkillsSection, TopProjectsSection } from "./components";
 
 export const Home: React.FC = () => {
     return (
         <Container>
-            <Section
-                title="Francisco Gabriel"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl sed aliquam blandit, nunc elit lacinia nunc, vitae aliquam nisl nunc sit amet nisl. Nulla facilisi. Sed euismod, nisl sed aliquam blandit, nunc elit lacinia nunc, vitae aliquam nisl nunc sit amet nisl. Nulla facilisi. Sed euismod, nisl sed aliquam blandit, nunc elit lacinia nunc, vitae aliquam nisl nunc sit amet nisl. Nulla facilisi. Sed euismod, nisl sed aliquam blandit, nunc elit lacinia nunc, vitae aliquam nisl nunc sit amet nisl."
-            />
-            <Section
-                title="Francisco Gabriel"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl sed aliquam blandit, nunc elit lacinia nunc, vitae aliquam nisl nunc sit amet nisl. Nulla facilisi. Sed euismod, nisl sed aliquam blandit, nunc elit lacinia nunc, vitae aliquam nisl nunc sit amet nisl. Nulla facilisi. Sed euismod, nisl sed aliquam blandit, nunc elit lacinia nunc, vitae aliquam nisl nunc sit amet nisl. Nulla facilisi. Sed euismod, nisl sed aliquam blandit, nunc elit lacinia nunc, vitae aliquam nisl nunc sit amet nisl."
-            />
-            <Section
-                title="Francisco Gabriel"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl sed aliquam blandit, nunc elit lacinia nunc, vitae aliquam nisl nunc sit amet nisl. Nulla facilisi. Sed euismod, nisl sed aliquam blandit, nunc elit lacinia nunc, vitae aliquam nisl nunc sit amet nisl. Nulla facilisi. Sed euismod, nisl sed aliquam blandit, nunc elit lacinia nunc, vitae aliquam nisl nunc sit amet nisl. Nulla facilisi. Sed euismod, nisl sed aliquam blandit, nunc elit lacinia nunc, vitae aliquam nisl nunc sit amet nisl."
-            />
-            <Section
-                title="Francisco Gabriel"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl sed aliquam blandit, nunc elit lacinia nunc, vitae aliquam nisl nunc sit amet nisl. Nulla facilisi. Sed euismod, nisl sed aliquam blandit, nunc elit lacinia nunc, vitae aliquam nisl nunc sit amet nisl. Nulla facilisi. Sed euismod, nisl sed aliquam blandit, nunc elit lacinia nunc, vitae aliquam nisl nunc sit amet nisl. Nulla facilisi. Sed euismod, nisl sed aliquam blandit, nunc elit lacinia nunc, vitae aliquam nisl nunc sit amet nisl."
-            />
+            <Section>
+                <AboutSection />
+            </Section>
+            <Section>
+                <SkillsSection />
+            </Section>
+            <Section>
+                <TopProjectsSection />
+            </Section>
             <SideContainer>
                 <SideContent />
             </SideContainer>

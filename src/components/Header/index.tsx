@@ -23,7 +23,7 @@ export const Header: React.FC<Props> = ({ themeName, setThemeName }) => {
                 )}
             </Logo>
             <LinksButtons>
-                <Link to="/">Home</Link>
+                <Link to="/portfolio">Home</Link>
                 <Link to="/projects">Projetos</Link>
             </LinksButtons>
         </Container>

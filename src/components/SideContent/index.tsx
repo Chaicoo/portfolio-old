@@ -18,7 +18,7 @@ export const SideContent: React.FC = () => {
     return (
         <Container>
             <ImageContainer>
-                <img src="public/profile.jpeg" alt="profile" />
+                <img src="https://avatars.githubusercontent.com/u/55364296?v=4" alt="profile" />
             </ImageContainer>
 
             <Text>

@@ -396,7 +396,7 @@ Error generating stack: `+i.message+`
         }
 
     }
-`,yy=()=>{const e=()=>{const t=document.createElement("a");t.href="public/CV-Francisco.pdf",t.download="curriculo.pdf",t.click()};return x.jsx(gy,{children:x.jsx("button",{onClick:e,children:"Baixar Currículo"})})},vy=$.div`
+`,yy=()=>{const e=()=>{const t=document.createElement("a");t.href="assets/CV-Francisco.pdf",t.download="curriculo.pdf",t.click()};return x.jsx(gy,{children:x.jsx("button",{onClick:e,children:"Baixar Currículo"})})},vy=$.div`
     > h1 {
         margin-top: 80px;
         font-size: 48px;

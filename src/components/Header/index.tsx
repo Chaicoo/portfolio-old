@@ -15,7 +15,7 @@ export const Header: React.FC<Props> = ({ themeName, setThemeName }) => {
     return (
         <Container>
             <Logo>
-                <Text>Francisco.<span>DEV</span></Text>
+                <Text>Chico.<span>DEV</span></Text>
                 {themeName === "light" ? (
                     <MoonIcon onClick={toggleTheme} />
                 ) : (

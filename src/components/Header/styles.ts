@@ -7,6 +7,7 @@ export const Container = styled.div`
     background: var(--background);
     padding: 12px 16px;
     border-bottom: 1px solid var(--accent);
+    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.1);
     height: 4.5rem;
     justify-content: space-between;
     position: fixed;
@@ -52,7 +53,6 @@ export const Text = styled.p`
 export const LinksButtons = styled.div`
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 1.6rem;
     margin-right: 1.6rem;
 
@@ -64,6 +64,9 @@ export const LinksButtons = styled.div`
         border-radius: 1.4rem;
         background: var(--accent);
         transition: opacity 0.8s ease-in-out;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
 
         &:hover {
             opacity: 0.8;

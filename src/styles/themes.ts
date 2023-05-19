@@ -2,7 +2,7 @@ export const themes = {
     light: {
         primary: "#fff",
         black: "#1b1f23",
-        gray: "#586069",
+        gray: "#afafaf",
         "gray-light": "#6a737d",
         "gray-dark": "#24292e",
         orange: "#f9826c",
@@ -22,9 +22,13 @@ export const themes = {
         moon: "#2b7489",
 
         background: "#eee8d5",
-        titles: "#6a737d",
-        //titles: "#8e8a99",
+        //titles: "#6a737d",
+        titles: "#2d2d2e",
         accent: "#0880AE",
+        terminal: "#121619",
+        "green-light": "#9BE9A8",
+        green: "#3FC463",
+        blue: "rgba(79, 140, 201, 1)",
     },
     dark: {
         primary: "#1D1D1D",
@@ -48,9 +52,14 @@ export const themes = {
         sun: "#f1e05a",
         moon: "#2b7489",
 
+        card: "#121619",
         background: "#1C2025",
         titles: "#D6E1DF",
         accent: "#8A85FF",
+        terminal: "#121619",
+        "green-light": "#9BE9A8",
+        green: "#3FC463",
+        blue: "rgba(79, 140, 201, 1)",
     },
 };
 

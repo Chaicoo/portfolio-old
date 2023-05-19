@@ -339,7 +339,7 @@ Error generating stack: `+i.message+`
     ${Yi}
 `,dy=$($p)`
     ${Yi}
-`,py=()=>x.jsxs(oy,{children:[x.jsx(iy,{children:x.jsx("img",{src:"public/profile.jpeg",alt:"profile"})}),x.jsxs(ly,{children:[x.jsx("h2",{children:"Francisco Gabriel Noleto Lima"}),x.jsx("p",{children:"Desenvolvedor Front-End Jr"}),x.jsx(sy,{})]}),x.jsxs(uy,{children:[x.jsx(Ye,{to:"https://github.com/Chaicoo",children:x.jsx(dy,{})}),x.jsx(Ye,{to:"#",children:x.jsx(cy,{})}),x.jsx(Ye,{to:"https://www.linkedin.com/in/francisco-gab/",children:x.jsx(ay,{})}),x.jsx(Ye,{to:"mailto:gabriellima27@gmail.com",children:x.jsx(fy,{})})]}),x.jsx(yy,{})]}),hy=$.div`
+`,py=()=>x.jsxs(oy,{children:[x.jsx(iy,{children:x.jsx("img",{src:"https://avatars.githubusercontent.com/u/55364296?v=4",alt:"profile"})}),x.jsxs(ly,{children:[x.jsx("h2",{children:"Francisco Gabriel Noleto Lima"}),x.jsx("p",{children:"Desenvolvedor Front-End Jr"}),x.jsx(sy,{})]}),x.jsxs(uy,{children:[x.jsx(Ye,{to:"https://github.com/Chaicoo",children:x.jsx(dy,{})}),x.jsx(Ye,{to:"#",children:x.jsx(cy,{})}),x.jsx(Ye,{to:"https://www.linkedin.com/in/francisco-gab/",children:x.jsx(ay,{})}),x.jsx(Ye,{to:"mailto:gabriellima27@gmail.com",children:x.jsx(fy,{})})]}),x.jsx(yy,{})]}),hy=$.div`
 	--padding-top: 100px;
 	--padding-bottom: 120px;
 	--heading-font-size: 32px;

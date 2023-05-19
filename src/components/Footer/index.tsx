@@ -38,7 +38,7 @@ export const Footer: React.FC = () => {
                 <Link to="https://github.com/Chaicoo">Francisco</Link>
             </MadeBy>
             <CopyRight>
-                <p>© 2023. Todos os direitos reservados.</p>
+                <span>© 2023. Todos os direitos reservados.</span>
             </CopyRight>
         </Container>
     );

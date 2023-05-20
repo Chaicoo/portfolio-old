@@ -15,7 +15,7 @@ function App() {
             <BrowserRouter>
                 <Header themeName={themeName} setThemeName={setThemeName} />
                 <Routes>
-                    <Route path="/portfolio" element={<Home />} />
+                    <Route path="/portifolio" element={<Home />} />
                     <Route path="projects" element={<Projects />} />
                 </Routes>
                 <Footer />

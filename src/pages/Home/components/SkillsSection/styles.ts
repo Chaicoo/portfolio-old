@@ -12,6 +12,7 @@ import {
 
 export const Container = styled.div`
     display: flex;
+    text-align: center;
     flex-direction: column;
     width: 100%;
     height: 560px;
@@ -26,7 +27,6 @@ export const Container = styled.div`
         font-size: 2.5rem;
         color: #d6e1df;
         margin-top: 50px;
-        margin-left: 50px;
     }
 `;
 
@@ -45,14 +45,34 @@ export const CardIcon = styled.div`
     flex-direction: column;
     width: 120px;
     height: 130px;
-    background-color: var(--background);
+    background-color: var(--terminal);
     border-radius: 8px;
     margin-bottom: 20px;
+    gap: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    > span {
+        font-size: 1.2rem;
+        color: #d6e1df;
+        margin-bottom: -20px;
+    }
+`;
+
+export const Line = styled.div`
+    max-width: 120px;
+    width: 90%;
+    border-top: 2px solid var(--border);
+    margin-top: 8px;
 `;
 
 const IconCSS = css`
-    width: 40px;
-    height: 40px;
+    width: 54px;
+    height: 54px;
     fill: var(--accent);
     flex-shrink: 0;
 `;

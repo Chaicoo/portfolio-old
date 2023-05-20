@@ -19,7 +19,7 @@ export const AboutSection: React.FC = () => {
                             <span className="dir">chico:</span>
                             <span className="dir">~</span>
                             <span className="dollar">$</span>
-                            <span className="command"> cat /Projetos/Potifolio/about.txt</span>
+                            <span className="command"> cat /Projetos/Portifolio/about.txt</span>
                         </p>
                         <p className="font">
                             Me chamo <strong>Francisco</strong> ou{" "}

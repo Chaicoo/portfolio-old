@@ -46,14 +46,17 @@ export const CardIcon = styled.div`
     width: 120px;
     height: 130px;
     background-color: var(--terminal);
-    border-radius: 8px;
+    border-radius: 10px 0 10px 0;
     margin-bottom: 20px;
     gap: 10px;
     cursor: pointer;
     transition: transform 0.5s;
+    opacity: 0.9;
 
     &:hover {
         transform: scale(1.1);
+        opacity: 1.1;
+        border: 1px solid var(--accent);
     }
 
     > span {
@@ -67,7 +70,6 @@ export const Line = styled.div`
     max-width: 120px;
     width: 90%;
     border-top: 2px solid var(--border);
-    margin-top: 8px;
 `;
 
 const IconCSS = css`

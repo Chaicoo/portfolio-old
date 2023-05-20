@@ -8,7 +8,6 @@ export const themes = {
         orange: "#f9826c",
         purple: "#8257e5",
 
-        header: "#24292e",
         logo: "#fff",
         "text-secondary": "#666",
         search: "rgba(255, 255, 255, 0.13)",
@@ -22,7 +21,7 @@ export const themes = {
         moon: "#2b7489",
 
         background: "#eee8d5",
-        "background-image": "url('public/bgLight.jpg')",
+        "background-image": "url('https://raw.githubusercontent.com/Chaicoo/portifolio/main/public/bgLight.jpg?token=GHSAT0AAAAAACBNYLSINDT54M2F76R5S5PCZDJDH2A')",
         //titles: "#6a737d",
         titles: "#2d2d2e",
         accent: "#0880AE",
@@ -40,7 +39,6 @@ export const themes = {
         orange: "#fff",
         purple: "#8257e5",
 
-        header: "#24292e",
         logo: "#fff",
         "text-secondary": "#9b9b9b",
         search: "#151515",
@@ -55,7 +53,7 @@ export const themes = {
 
         card: "#121619",
         background: "#1C2025",
-        "background-image": "url('public/bgDark.jpg')",
+        "background-image": "url('https://raw.githubusercontent.com/Chaicoo/portifolio/main/public/bgDark.jpg?token=GHSAT0AAAAAACBNYLSISYWI22HLK75Y63K2ZDJDH2A')",
         titles: "#D6E1DF",
         accent: "#8A85FF",
         terminal: "#121619",

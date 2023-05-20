@@ -11,7 +11,7 @@ export const Container = styled.div`
         color: var(--titles);
         font-size: 1.2rem;
         padding: 0.3rem 0.5rem;
-        border-radius: 1rem;
+        border-radius: 0.8rem;
         border: 2px solid var(--accent);
         background: none;
         transition: opacity 0.8s ease-in-out;

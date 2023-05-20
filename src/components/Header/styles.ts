@@ -7,7 +7,7 @@ export const Container = styled.div`
     background: var(--background);
     padding: 12px 16px;
     border-bottom: 1px solid var(--accent);
-    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.4);
     height: 4.5rem;
     justify-content: space-between;
     position: fixed;
@@ -61,7 +61,7 @@ export const LinksButtons = styled.div`
         color: var(--titles);
         font-size: 1.2rem;
         padding: 0.3rem 0.5rem;
-        border-radius: 1rem;
+        border-radius: 0.8rem;
         border: 2px solid var(--accent);
         background: none;
         transition: opacity 0.8s ease-in-out;

@@ -25,6 +25,7 @@ export const Header: React.FC<Props> = ({ themeName, setThemeName }) => {
             <LinksButtons>
                 <Link to="/portifolio">Home</Link>
                 <Link to="/projects">Projetos</Link>
+                
             </LinksButtons>
         </Container>
     );

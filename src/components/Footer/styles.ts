@@ -50,10 +50,8 @@ export const MadeBy = styled.p`
 
     > a {
         transition: opacity 0.2s;
-        text-decoration: none;
         &:hover {
             opacity: 0.7;
-            text-decoration: underline;
         }
     }
 `;

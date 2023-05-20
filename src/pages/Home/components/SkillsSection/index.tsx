@@ -24,7 +24,7 @@ export const SkillsSection: React.FC = () => {
 
     return (
         <Container>
-            <h2 data-aos="zoom-in">Conhecimentos</h2>
+            <span data-aos="zoom-in">Conhecimentos</span>
             <ContainerSkills data-aos="zoom-in" >
                 <CardIcon>
                     <Html5Icon />

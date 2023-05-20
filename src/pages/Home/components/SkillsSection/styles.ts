@@ -14,6 +14,7 @@ export const Container = styled.div`
     display: flex;
     text-align: center;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 560px;
     margin: 120px 0;
@@ -23,10 +24,13 @@ export const Container = styled.div`
     background-position: center;
     background-attachment: fixed;
 
-    > h2 {
+    > span {
         font-size: 2.5rem;
+        font-weight: 700;
         color: #d6e1df;
         margin-top: 50px;
+        border-bottom: 2px solid var(--accent);
+        width: 25%;
     }
 `;
 
@@ -34,8 +38,9 @@ export const ContainerSkills = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    margin-top: 50px;
+    margin-top: 60px;
     gap: 20px;
+    width: 80%;
 `;
 
 export const CardIcon = styled.div`

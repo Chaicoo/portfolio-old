@@ -1,7 +1,12 @@
 import React from "react";
 import { SideContainer, SideContent, Section } from "../../components";
 import { Container } from "./styles";
-import { AboutSection, SkillsSection, TopProjectsSection } from "./components";
+import {
+    AboutSection,
+    ServicesSection,
+    SkillsSection,
+    TopProjectsSection,
+} from "./components";
 
 export const Home: React.FC = () => {
     return (
@@ -14,6 +19,9 @@ export const Home: React.FC = () => {
             </Section>
             <Section>
                 <TopProjectsSection />
+            </Section>
+            <Section>
+                <ServicesSection />
             </Section>
             <SideContainer>
                 <SideContent />

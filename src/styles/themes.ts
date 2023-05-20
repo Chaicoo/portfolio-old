@@ -21,7 +21,7 @@ export const themes = {
         moon: "#2b7489",
 
         background: "#eee8d5",
-        "background-image": "url('https://raw.githubusercontent.com/Chaicoo/portifolio/main/public/bgLight.jpg?token=GHSAT0AAAAAACBNYLSINDT54M2F76R5S5PCZDJDH2A')",
+        "background-image": "url('../../public/images/bgLight.jpg')",
         //titles: "#6a737d",
         titles: "#2d2d2e",
         accent: "#0880AE",
@@ -53,7 +53,7 @@ export const themes = {
 
         card: "#121619",
         background: "#1C2025",
-        "background-image": "url('https://raw.githubusercontent.com/Chaicoo/portifolio/main/public/bgDark.jpg?token=GHSAT0AAAAAACBNYLSISYWI22HLK75Y63K2ZDJDH2A')",
+        "background-image": "url('../../public/images/bgDark.jpg')",
         titles: "#D6E1DF",
         accent: "#8A85FF",
         terminal: "#121619",

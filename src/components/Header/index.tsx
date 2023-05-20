@@ -1,6 +1,14 @@
-import { Container, SunIcon, MoonIcon, Text, LinksButtons, Logo } from "./styles";
+import {
+    Container,
+    SunIcon,
+    MoonIcon,
+    Text,
+    LinksButtons,
+    Logo,
+} from "./styles";
 import { ThemeName } from "../../styles/themes";
 import { Link } from "react-router-dom";
+import { Link as Scroll } from 'react-scroll';
 
 interface Props {
     themeName: ThemeName;
@@ -15,7 +23,9 @@ export const Header: React.FC<Props> = ({ themeName, setThemeName }) => {
     return (
         <Container>
             <Logo>
-                <Text>Chico.<span>DEV</span></Text>
+                <Text>
+                    Chico.<span>DEV</span>
+                </Text>
                 {themeName === "light" ? (
                     <MoonIcon onClick={toggleTheme} />
                 ) : (
@@ -24,8 +34,9 @@ export const Header: React.FC<Props> = ({ themeName, setThemeName }) => {
             </Logo>
             <LinksButtons>
                 <Link to="/portifolio">Home</Link>
-                <Link to="/projects">Projetos</Link>
-                
+                <Scroll to="projects" smooth={true} duration={1000}>Projetos</Scroll>
+                <Scroll to="skills" smooth={true} duration={1000}>Conhecimentos</Scroll>
+                <Scroll to="services" smooth={true} duration={1000}>Serviços</Scroll>
             </LinksButtons>
         </Container>
     );

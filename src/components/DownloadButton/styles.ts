@@ -10,18 +10,15 @@ export const Container = styled.div`
         text-decoration: none;
         color: var(--titles);
         font-size: 1.2rem;
-        padding: 0.3rem 0.5rem;
-        border-radius: 0.8rem;
-        border: 2px solid var(--accent);
-        background: none;
         transition: opacity 0.8s ease-in-out;
         cursor: pointer;
         display: flex;
         align-items: center;
+        border-bottom: 2px solid var(--accent);
 
         &:hover {
-            background: var(--accent);
-            color: var(--background);
+            opacity: 0.8;
+            color: var(--accent);
         }
     }
 `;

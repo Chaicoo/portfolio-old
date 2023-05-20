@@ -16,8 +16,7 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 560px;
-    margin: 120px 0;
+    height: 600px;
     background-image: ${(props) => props.theme["background-image"]};
     background-size: cover;
     background-repeat: no-repeat;

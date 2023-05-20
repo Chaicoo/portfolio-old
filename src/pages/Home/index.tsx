@@ -15,13 +15,19 @@ export const Home: React.FC = () => {
                 <AboutSection />
             </Section>
             <Section>
-                <SkillsSection />
+                <div id="skills">
+                    <SkillsSection />
+                </div>
             </Section>
             <Section>
-                <TopProjectsSection />
+                <div id="projects">
+                    <TopProjectsSection />
+                </div>
             </Section>
             <Section>
-                <ServicesSection />
+                <div id="services">
+                    <ServicesSection />
+                </div>
             </Section>
             <SideContainer>
                 <SideContent />

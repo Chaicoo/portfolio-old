@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    > h1 {
-        margin-top: 80px;
-        font-size: 48px;
-        text-align: center;
+    #skills {
+        padding-top: 2rem;
     }
-
-    > a {
-        display: flex;
-        justify-content: center;
+    #projects {
+        padding-top: 2rem;
+    }
+    #services {
+        padding-top: 2rem;
     }
 `;

@@ -34,5 +34,4 @@ export const Content = styled.div`
 		max-width: var(--content-width);
 	}
 
-	padding: var(--padding-top) 30px var(--padding-bottom);
 `;

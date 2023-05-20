@@ -60,16 +60,18 @@ export const LinksButtons = styled.div`
         text-decoration: none;
         color: var(--titles);
         font-size: 1.2rem;
-        padding: 0.3rem 0.9rem;
-        border-radius: 1.4rem;
-        background: var(--accent);
+        padding: 0.3rem 0.5rem;
+        border-radius: 1rem;
+        border: 2px solid var(--accent);
+        background: none;
         transition: opacity 0.8s ease-in-out;
+        cursor: pointer;
         display: flex;
         align-items: center;
-        box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
 
         &:hover {
-            opacity: 0.8;
+            background: var(--accent);
+            color: var(--background);
         }
     }
 

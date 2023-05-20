@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    height: 460px;
+    height: 560px;
+	margin: 120px 0;
 `;
 
 export const Wrapper = styled.div`

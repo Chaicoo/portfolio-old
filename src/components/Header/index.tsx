@@ -21,7 +21,7 @@ export const Header: React.FC<Props> = ({ themeName, setThemeName }) => {
     }
 
     const location = useLocation();
-    const isHomePage = location.pathname === "/portifolio" || location.pathname === "/portifolio/";
+    const isProjectPage = location.pathname === "/portifolio/projects";
 
     return (
         <Container>
@@ -36,7 +36,11 @@ export const Header: React.FC<Props> = ({ themeName, setThemeName }) => {
                 )}
             </Logo>
             <LinksButtons>
-                {isHomePage ? (
+                {isProjectPage ? (
+                    <>
+                        <Link to="/portifolio">Home</Link>
+                    </>
+                ) : (
                     <>
                         <Scroll to="skills" smooth={true} duration={1000}>
                             Conhecimentos
@@ -47,10 +51,6 @@ export const Header: React.FC<Props> = ({ themeName, setThemeName }) => {
                         <Scroll to="services" smooth={true} duration={1000}>
                             Serviços
                         </Scroll>
-                    </>
-                ) : (
-                    <>
-                        <Link to="/portifolio">Home</Link>
                     </>
                 )}
             </LinksButtons>

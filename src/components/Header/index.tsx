@@ -21,7 +21,7 @@ export const Header: React.FC<Props> = ({ themeName, setThemeName }) => {
     }
 
     const location = useLocation();
-    const isHomePage = location.pathname === "/portifolio";
+    const isHomePage = location.pathname === "/portifolio" || location.pathname === "/portifolio/";
 
     return (
         <Container>

@@ -22,7 +22,6 @@ export const themes = {
 
         background: "#eee8d5",
         "background-image": "url('./images/bgLight.jpg')",
-        //titles: "#6a737d",
         titles: "#2d2d2e",
         accent: "#0880AE",
         terminal: "#121619",

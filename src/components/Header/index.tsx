@@ -7,8 +7,8 @@ import {
     Logo,
 } from "./styles";
 import { ThemeName } from "../../styles/themes";
-import { Link } from "react-router-dom";
-import { Link as Scroll } from 'react-scroll';
+import { Link, useLocation } from "react-router-dom";
+import { Link as Scroll } from "react-scroll";
 
 interface Props {
     themeName: ThemeName;
@@ -19,6 +19,9 @@ export const Header: React.FC<Props> = ({ themeName, setThemeName }) => {
     function toggleTheme() {
         setThemeName(themeName === "dark" ? "light" : "dark");
     }
+
+    const location = useLocation();
+    const isHomePage = location.pathname === "/portifolio";
 
     return (
         <Container>
@@ -33,10 +36,23 @@ export const Header: React.FC<Props> = ({ themeName, setThemeName }) => {
                 )}
             </Logo>
             <LinksButtons>
-                <Link to="/portifolio">Home</Link>
-                <Scroll to="projects" smooth={true} duration={1000}>Projetos</Scroll>
-                <Scroll to="skills" smooth={true} duration={1000}>Conhecimentos</Scroll>
-                <Scroll to="services" smooth={true} duration={1000}>Serviços</Scroll>
+                {isHomePage ? (
+                    <>
+                        <Scroll to="skills" smooth={true} duration={1000}>
+                            Conhecimentos
+                        </Scroll>
+                        <Scroll to="projects" smooth={true} duration={1000}>
+                            Projetos
+                        </Scroll>
+                        <Scroll to="services" smooth={true} duration={1000}>
+                            Serviços
+                        </Scroll>
+                    </>
+                ) : (
+                    <>
+                        <Link to="/portifolio">Home</Link>
+                    </>
+                )}
             </LinksButtons>
         </Container>
     );

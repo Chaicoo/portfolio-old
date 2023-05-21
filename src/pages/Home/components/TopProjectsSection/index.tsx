@@ -7,7 +7,7 @@ export const TopProjectsSection: React.FC = () => {
     return (
         <Container>
             <h2>Top Projects</h2>
-            <Link to="/projects">Projetos</Link>
+            <Link to="/portifolio/projects">Projetos</Link>
 
         </Container>
     );

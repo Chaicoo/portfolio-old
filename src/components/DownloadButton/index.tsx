@@ -3,7 +3,8 @@ import { Container } from "./styles";
 export const DownloadButton = () => {
     const handleDownload = () => {
         const link = document.createElement("a");
-        link.href = "public/CV-Francisco.pdf";
+        //caminho direto para o pdf
+        link.href = "/portifolio/pdf/CV-Francisco.pdf";
         link.download = "curriculo.pdf";
         link.click();
     };

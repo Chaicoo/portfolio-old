@@ -3,10 +3,8 @@ export interface APIRepo {
     owner: {
         login: string;
     };
-    stargazers_count: number;
-    forks: number;
     html_url: string;
-    description: string;
+    description?: string;
     language?: string;
     fork: boolean;
 }

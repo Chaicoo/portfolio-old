@@ -33,6 +33,8 @@ export const Projects: React.FC = () => {
                 {repos.map((repo) => (
                     <li key={repo.name}>
                         <a href={repo.html_url}>{repo.name}</a>
+                        <p>{repo.description}</p>
+                        <p>{repo.language}</p>
                     </li>
                 ))}
             </ul>

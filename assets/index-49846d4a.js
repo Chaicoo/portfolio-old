@@ -388,7 +388,7 @@ Error generating stack: `+i.message+`
             color: var(--accent);
         }
     }
-`,s4=()=>{const e=()=>{const t=document.createElement("a");t.href="public/CV-Francisco.pdf",t.download="curriculo.pdf",t.click()};return w.jsx(a4,{children:w.jsx("button",{onClick:e,children:"Baixar Currículo"})})},u4=A.div`
+`,s4=()=>{const e=()=>{const t=document.createElement("a");t.href="/portifolio/pdf/CV-Francisco.pdf",t.download="curriculo.pdf",t.click()};return w.jsx(a4,{children:w.jsx("button",{onClick:e,children:"Baixar Currículo"})})},u4=A.div`
     #skills {
         padding-top: 2rem;
     }

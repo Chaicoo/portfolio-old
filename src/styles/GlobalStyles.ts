@@ -7,6 +7,11 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    ::selection{
+        background: var(--accent);
+        color: #fff;
+    }
+
     html{
         min-height: 100%;
         background: var(--background);

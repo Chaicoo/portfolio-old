@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import Router from "./router";
 import { ThemeProvider } from "styled-components";
 import { Header, Footer } from "./components";
-import { Home, Projects } from "./pages";
 import { ThemeName, themes, GlobalStyles } from "./styles";
 
 function App() {
@@ -12,14 +12,8 @@ function App() {
     return (
         <BrowserRouter>
             <ThemeProvider theme={currentTheme}>
-                <Header
-                    themeName={themeName}
-                    setThemeName={setThemeName}
-                />
-                <Routes>
-                    <Route path="/portifolio" element={<Home />} />
-                    <Route path="/portifolio/projects" element={<Projects />} />
-                </Routes>
+                <Header themeName={themeName} setThemeName={setThemeName} />
+                <Router />
                 <Footer />
                 <GlobalStyles />
             </ThemeProvider>

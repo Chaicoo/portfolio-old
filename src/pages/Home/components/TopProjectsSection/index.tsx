@@ -3,6 +3,7 @@ import axios from "axios";
 import { APIRepo } from "../../../../@types";
 import { Container } from "./styles";
 import { Link } from "react-router-dom";
+import Card from "../Card";
 
 export const TopProjectsSection: React.FC = () => {
     const [repos, setRepos] = useState<APIRepo[]>([]);
@@ -17,7 +18,7 @@ export const TopProjectsSection: React.FC = () => {
                     (repo) =>
                         repo.name === "github-ui-react" ||
                         repo.name === "Maratona-Discover" ||
-                        repo.name === "API-typescript-mongoDB"
+                        repo.name === "Baralho-de-cartas-Pokemon"
                 );
 
                 setRepos(filteredRepos);
@@ -30,11 +31,11 @@ export const TopProjectsSection: React.FC = () => {
     }, []);
     return (
         <Container>
-            <h2>Meus projetos</h2>
+            <span>Meus projetos</span>
             <ul>
                 {repos.map((repo) => (
                     <li key={repo.name}>
-                        <a href={repo.html_url}>{repo.name}</a>
+                        <Card name={repo.name} url={repo.html_url} description={repo.description} />
                     </li>
                 ))}
             </ul>

@@ -15,7 +15,7 @@ export const GlobalStyles = createGlobalStyle`
     html{
         min-height: 100%;
         background: var(--background);
-    }
+    } 
 
     *, button, input{
         border: 0;

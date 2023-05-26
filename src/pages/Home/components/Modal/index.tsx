@@ -1,13 +1,20 @@
-import React from 'react';
+import React from "react";
+import { Container, CloseButton, Content } from "./styles";
 
-import { Container } from './styles';
+interface ModalProps {
+    onClose: () => void;
+    children: React.ReactNode;
+}
 
-const Modal: React.FC = () => {
-  return (
+const Modal: React.FC<ModalProps> = ({ children, onClose }) => {
+    return (
         <Container>
-            <h2>Modal</h2>
+            <Content>
+                <CloseButton onClick={onClose}>✕</CloseButton>
+                {children}
+            </Content>
         </Container>
     );
-}
+};
 
 export default Modal;

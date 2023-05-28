@@ -20,8 +20,7 @@ export const Container = styled.div`
     background-image: ${(props) => props.theme["background-image"]};
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 
     > span {
         font-size: 2.5rem;
@@ -29,7 +28,7 @@ export const Container = styled.div`
         color: #d6e1df;
         margin-top: 50px;
         border-bottom: 2px solid var(--accent);
-        width: 25%;
+        /* width: 25%; */
     }
 
     @media (max-width: 768px) {
@@ -40,7 +39,7 @@ export const Container = styled.div`
 
 export const ContainerSkills = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     justify-items: center;
     margin-top: 60px;
     gap: 20px;
@@ -71,7 +70,7 @@ export const CardIcon = styled.div`
     > span {
         font-size: 1.2rem;
         color: #d6e1df;
-        margin-bottom: -20px;
+        /* margin-bottom: -20px; */
     }
 `;
 

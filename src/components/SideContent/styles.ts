@@ -11,10 +11,9 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    @media (min-width: 1024px) {
-        max-width: 480px;
-    }
+    max-width: 480px;
+    margin: 0 auto;
+    min-height: 100vh;
 `;
 
 export const ImageContainer = styled.div`
@@ -27,15 +26,15 @@ export const ImageContainer = styled.div`
         border-radius: 50%;
         padding: 4px;
         border: 2px solid var(--accent);
-
-        @media (max-width: 768px) {
-            width: 200px;
-            height: 200px;
-        }
     }
 
     @media (max-width: 768px) {
-        margin-top: 100px;
+        margin-top: 90px;
+
+        > img {
+            width: 200px;
+            height: 200px;
+        }
     }
 `;
 
@@ -44,28 +43,28 @@ export const Text = styled.div`
     flex-direction: column;
     align-items: center;
     margin-top: 16px;
+    text-align: center;
 
     > h2 {
         font-size: 28px;
         font-weight: 600;
+        margin-bottom: 8px;
     }
 
     > span {
         font-size: 20px;
         color: var(--text-secondary);
-        margin: 0 auto;
         padding: 0 2rem;
-        text-align: center;
+        margin-bottom: 8px;
     }
 
     > p {
         font-size: 18px;
         color: var(--text-secondary);
+        margin-bottom: 8px;
     }
 
     @media (max-width: 768px) {
-        gap: 8px;
-
         > h2 {
             font-size: 24px;
         }
@@ -80,9 +79,8 @@ export const Text = styled.div`
     }
 
     @media (min-width: 768px) {
-        margin-top: 16px;
-
-        > h2 {
+        > h2,
+        > span {
             display: none;
         }
     }
@@ -108,6 +106,7 @@ export const SocialMedia = styled.div`
 
     > a {
         transition: opacity 0.2s;
+
         &:hover {
             opacity: 0.7;
         }
@@ -130,10 +129,7 @@ const IconCSS = css`
 `;
 
 export const ScrollIcon = styled(BsChevronDoubleDown)`
-    width: 28px;
-    height: 28px;
-    fill: var(--accent);
-    flex-shrink: 0;
+    ${IconCSS}
 `;
 
 export const LinkedinIcon = styled(AiFillLinkedin)`

@@ -20,7 +20,7 @@ export const Container = styled.div`
 
         &:hover {
             background-color: var(--text);
-            color: var(--background);
+            color: var(--button);
         }
     }
 `;

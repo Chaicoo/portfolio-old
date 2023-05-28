@@ -68,14 +68,25 @@ export const Text = styled.div`
             font-size: 16px;
         }
     }
+
+    @media (min-width: 768px) {
+        margin-top: 16px;
+
+        > h2 {
+            display: none;
+        }
+    }
 `;
 
 export const Line = styled.div`
-    max-width: calc(100% / 1.2);
     margin: 0 auto;
     margin-top: 20px;
     width: 100%;
     border-top: 2px solid var(--border);
+
+    @media (max-width: 768px) {
+        max-width: calc(100% / 1.2);
+    }
 `;
 
 export const SocialMedia = styled.div`
@@ -100,9 +111,6 @@ export const ScrollMessage = styled.div`
     align-items: center;
     gap: 12px;
 
-    @media (min-width: 768px) {
-        display: none;
-    }
 `;
 
 const IconCSS = css`

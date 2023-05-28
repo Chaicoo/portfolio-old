@@ -42,6 +42,9 @@ export const Header: React.FC<Props> = ({ themeName, setThemeName }) => {
                     </>
                 ) : (
                     <>
+                        <Scroll to="experience" smooth={true} duration={1000}>
+                            Experiência
+                        </Scroll>
                         <Scroll to="projects" smooth={true} duration={1000}>
                             Projetos
                         </Scroll>

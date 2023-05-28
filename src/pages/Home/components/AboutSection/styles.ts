@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const Container = styled.div`
     width: 100%;
     height: 100%;
-    margin: 150px 0;
+    margin-top: 150px;
 `;
 
 export const Wrapper = styled.div`
     width: calc(100% / 1.8);
-    height: 400px;
+    height: 65vh;
     display: flex;
     margin-left: 5rem;
     display: flex;
@@ -45,6 +45,7 @@ export const Wrapper = styled.div`
         cursor: pointer;
         width: 250px;
         display: flex;
+        font-size: 16px;
         justify-content: center;
         align-items: center;
         color: var(--text);

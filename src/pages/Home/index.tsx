@@ -3,6 +3,7 @@ import { SideContainer, SideContent, Section } from "../../components";
 import { Container } from "./styles";
 import {
     AboutSection,
+    ExperienceSection,
     ServicesSection,
     SkillsSection,
     TopProjectsSection,
@@ -17,6 +18,11 @@ export const Home: React.FC = () => {
             <Section>
                 <div id="skills">
                     <SkillsSection />
+                </div>
+            </Section>
+            <Section>
+                <div id="experience">
+                    <ExperienceSection />
                 </div>
             </Section>
             <Section>

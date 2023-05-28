@@ -13,31 +13,31 @@ export const SkillsSection: React.FC = () => {
         <Container>
             <Tittle>
                 <span data-aos="zoom-in" className="subTittle">
-                    Conheça um pouco dos meus
+                    Veja um pouco dos meus
                 </span>
                 <span data-aos="zoom-in" className="tittle">
                     Conhecimentos
                 </span>
             </Tittle>
-            <ContainerSkills data-aos="zoom-in">
+            <ContainerSkills data-aos="fade-right">
                 <li>
                     1 ano de experiência com desenvolvimento Front-End como
-                    Freelancer
+                    Freelancer.
                 </li>
                 <li>
-                    Conhecimentos em design responsivo, mobile-first e UI/UX
+                    Conhecimentos em design responsivo, mobile-first e UI/UX.
                 </li>
                 <li>
-                    Desenvolvimento de aplicações usando JavaScript e TypeScript
+                    Desenvolvimento de aplicações usando JavaScript e TypeScript.
                 </li>
-                <li>Desenvolvimento de aplicações web com React e Next.js</li>
+                <li>Desenvolvimento de aplicações web com React e Next.js.</li>
                 <li>
                     Experiência com bibliotecas e frameworks CSS como
-                    TailwindCSS e Styled-Components
+                    TailwindCSS e Styled-Components.
                 </li>
-                <li>Consumo de API's REST com Axios e Fetch API</li>
+                <li>Consumo de API's REST com Axios e Fetch API.</li>
                 <li>
-                    Versionamento de código utilizando Git e padrões de projeto
+                    Versionamento de código utilizando Git e padrões de projeto.
                 </li>
             </ContainerSkills>
         </Container>

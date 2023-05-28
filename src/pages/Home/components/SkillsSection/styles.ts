@@ -6,11 +6,7 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    /* background-image: ${(props) => props.theme["background-image"]};
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
+    height: 65vh;
     margin-top: 2rem;
 
     @media (max-width: 768px) {
@@ -65,7 +61,7 @@ export const ContainerSkills = styled.ul`
     padding: 0 1rem;
 
     > li {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: var(--text);
         font-weight: 500;
         text-align: left;
@@ -73,7 +69,7 @@ export const ContainerSkills = styled.ul`
 
     @media (max-width: 768px) {
         > li {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
     }
 `;

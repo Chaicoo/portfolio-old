@@ -9,6 +9,7 @@ export const Container = styled.div`
     > button {
         cursor: pointer;
         display: flex;
+        font-size: 16px;
         justify-content: center;
         text-decoration: none;
         align-items: center;

@@ -12,20 +12,6 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    min-height: 100vh;
-
-    > button {
-        position: absolute;
-        top: 80px;
-        left: 15px;
-        font-size: 24px;
-    }
-
-    @media (min-width: 768px) {
-        > button {
-            display: none;
-        }
-    }
 `;
 
 export const ImageContainer = styled.div`

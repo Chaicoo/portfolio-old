@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
+import { BsFillSunFill } from "react-icons/bs";
+import { BsMoonStarsFill } from "react-icons/bs";
 
 export const Container = styled.div`
     display: flex;
@@ -32,7 +33,7 @@ export const SunIcon = styled(BsFillSunFill)`
     }
 `;
 
-export const MoonIcon = styled(BsFillMoonFill)`
+export const MoonIcon = styled(BsMoonStarsFill)`
     fill: var(--accent);
     width: 32px;
     height: 32px;

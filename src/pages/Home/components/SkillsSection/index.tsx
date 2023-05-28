@@ -1,19 +1,6 @@
 import React, { useEffect } from "react";
 
-import {
-    Container,
-    ContainerSkills,
-    CardIcon,
-    Css3Icon,
-    Html5Icon,
-    JavaScriptIcon,
-    FigmaIcon,
-    ReactIcon,
-    StyledComponentsIcon,
-    TailwindIcon,
-    TypeScriptIcon,
-    Line
-} from "./styles";
+import { Container, ContainerSkills, Tittle } from "./styles";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -24,48 +11,34 @@ export const SkillsSection: React.FC = () => {
 
     return (
         <Container>
-            <span data-aos="zoom-in">Conhecimentos</span>
-            <ContainerSkills data-aos="zoom-in" >
-                <CardIcon>
-                    <Html5Icon />
-                    <Line />
-                    <span>HTML</span>
-                </CardIcon>
-                <CardIcon>
-                    <Css3Icon />
-                    <Line />
-                    <span>CSS</span>
-                </CardIcon>
-                <CardIcon>
-                    <JavaScriptIcon />
-                    <Line />
-                    <span>JavaScript</span>
-                </CardIcon>
-                <CardIcon>
-                    <TypeScriptIcon />
-                    <Line />
-                    <span>TypeScript</span>
-                </CardIcon>
-                <CardIcon>
-                    <ReactIcon />
-                    <Line />
-                    <span>React</span>
-                </CardIcon>
-                <CardIcon>
-                    <StyledComponentsIcon />
-                    <Line />
-                    <span>CSS-in-JS</span>
-                </CardIcon>
-                <CardIcon>
-                    <TailwindIcon />
-                    <Line />
-                    <span>TailwindCSS</span>
-                </CardIcon>
-                <CardIcon>
-                    <FigmaIcon />
-                    <Line />
-                    <span>Figma</span>
-                </CardIcon>
+            <Tittle>
+                <span data-aos="zoom-in" className="subTittle">
+                    Conheça um pouco dos meus
+                </span>
+                <span data-aos="zoom-in" className="tittle">
+                    Conhecimentos
+                </span>
+            </Tittle>
+            <ContainerSkills data-aos="zoom-in">
+                <li>
+                    1 ano de experiência com desenvolvimento Front-End como
+                    Freelancer
+                </li>
+                <li>
+                    Conhecimentos em design responsivo, mobile-first e UI/UX
+                </li>
+                <li>
+                    Desenvolvimento de aplicações usando JavaScript e TypeScript
+                </li>
+                <li>Desenvolvimento de aplicações web com React e Next.js</li>
+                <li>
+                    Experiência com bibliotecas e frameworks CSS como
+                    TailwindCSS e Styled-Components
+                </li>
+                <li>Consumo de API's REST com Axios e Fetch API</li>
+                <li>
+                    Versionamento de código utilizando Git e padrões de projeto
+                </li>
             </ContainerSkills>
         </Container>
     );

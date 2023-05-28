@@ -17,14 +17,8 @@ import { Link } from "react-router-dom";
 import { DownloadButton } from "..";
 
 export const SideContent: React.FC = () => {
-    function handleToggle() {
-        if (window.toggleActiveMenu) window.toggleActiveMenu();
-    }
     return (
         <Container>
-            <button onClick={handleToggle}>
-                ✕
-            </button>
             <ImageContainer>
                 <img
                     src="https://avatars.githubusercontent.com/u/55364296?v=4"

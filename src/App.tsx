@@ -6,7 +6,7 @@ import { Header, Footer } from "./components";
 import { ThemeName, themes, GlobalStyles } from "./styles";
 
 function App() {
-    const [themeName, setThemeName] = useState<ThemeName>("dark");
+    const [themeName, setThemeName] = useState<ThemeName>("light");
     const currentTheme = themes[themeName];
 
     return (

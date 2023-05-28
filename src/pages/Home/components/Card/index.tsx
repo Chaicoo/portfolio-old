@@ -21,14 +21,7 @@ const Card: React.FC<CardProps> = ({ name, url, description }) => {
     return (
         <>
             <Container onClick={handleCardClick}>
-                {name === "github-ui-react" ? (
-                    <img src="./images/github_clone.png" />
-                ) : name === "Maratona-Discover" ? (
-                    <img src="./images/maratona_discover.png" />
-                ) : (
-                    <img src="./images/baralho_pokemon.png" />
-                )}
-                <span>{name}</span>
+               
             </Container>
             {isModalOpen && (
                 <Modal onClose={closeModal}>

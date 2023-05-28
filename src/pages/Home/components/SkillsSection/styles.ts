@@ -1,14 +1,4 @@
-import styled, { css } from "styled-components";
-import {
-    SiStyledcomponents,
-    SiTypescript,
-    SiJavascript,
-    SiHtml5,
-    SiCss3,
-    SiReact,
-    SiTailwindcss,
-    SiFigma,
-} from "react-icons/si";
+import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
@@ -16,105 +6,74 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 600px;
-    background-image: ${(props) => props.theme["background-image"]};
+    height: 100vh;
+    /* background-image: ${(props) => props.theme["background-image"]};
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    background-attachment: fixed; */
+    margin-top: 2rem;
 
-    > span {
-        font-size: 2.5rem;
+    @media (max-width: 768px) {
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+`;
+
+export const Tittle = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    > .subTittle {
+        margin-top: 2rem;
+        font-size: 1.3rem;
+        color: var(--text-secondary);
+    }
+
+    > .tittle {
+        font-size: 2.7rem;
         font-weight: 700;
-        color: #d6e1df;
-        margin-top: 50px;
+        color: var(--text);
         border-bottom: 2px solid var(--accent);
-        /* width: 25%; */
     }
 
     @media (max-width: 768px) {
         height: 100%;
-        margin-top: 8rem;
+        margin-top: 10rem;
+
+        > .subTittle {
+            font-size: 1rem;
+        }
+
+        > .tittle {
+            font-size: 2rem;
+        }
     }
 `;
 
-export const ContainerSkills = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    justify-items: center;
-    margin-top: 60px;
-    gap: 20px;
-    width: 80%;
-`;
-
-export const CardIcon = styled.div`
+export const ContainerSkills = styled.ul`
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    width: 120px;
-    height: 130px;
-    background-color: var(--terminal);
-    border-radius: 10px 0 10px 0;
-    margin-bottom: 20px;
-    gap: 10px;
-    cursor: pointer;
-    transition: transform 0.5s;
-    opacity: 0.9;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 2.9rem;
+    gap: 1.5rem;
+    list-style: outside;
+    padding: 0 1rem;
 
-    &:hover {
-        transform: scale(1.1);
-        opacity: 1.1;
-        border: 1px solid var(--accent);
+    > li {
+        font-size: 1.5rem;
+        color: var(--text);
+        font-weight: 500;
+        text-align: left;
     }
 
-    > span {
-        font-size: 1.2rem;
-        color: #d6e1df;
-        /* margin-bottom: -20px; */
+    @media (max-width: 768px) {
+        > li {
+            font-size: 1.2rem;
+        }
     }
-`;
-
-export const Line = styled.div`
-    max-width: 120px;
-    width: 90%;
-    border-top: 2px solid var(--border);
-`;
-
-const IconCSS = css`
-    width: 54px;
-    height: 54px;
-    fill: var(--accent);
-    flex-shrink: 0;
-`;
-
-export const StyledComponentsIcon = styled(SiStyledcomponents)`
-    ${IconCSS}
-`;
-
-export const TypeScriptIcon = styled(SiTypescript)`
-    ${IconCSS}
-`;
-
-export const JavaScriptIcon = styled(SiJavascript)`
-    ${IconCSS}
-`;
-
-export const Html5Icon = styled(SiHtml5)`
-    ${IconCSS}
-`;
-
-export const Css3Icon = styled(SiCss3)`
-    ${IconCSS}
-`;
-
-export const ReactIcon = styled(SiReact)`
-    ${IconCSS}
-`;
-
-export const TailwindIcon = styled(SiTailwindcss)`
-    ${IconCSS}
-`;
-
-export const FigmaIcon = styled(SiFigma)`
-    ${IconCSS}
 `;

@@ -4,12 +4,14 @@ import {
     AiFillGithub,
     AiFillMail,
 } from "react-icons/ai";
+import { BsChevronDoubleDown } from "react-icons/bs";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
     height: 100%;
+    align-items: center;
 
     @media (min-width: 1024px) {
         max-width: 480px;
@@ -26,6 +28,15 @@ export const ImageContainer = styled.div`
         border-radius: 50%;
         padding: 4px;
         border: 2px solid var(--accent);
+
+        @media (max-width: 768px) {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 150px;
     }
 `;
 
@@ -44,6 +55,18 @@ export const Text = styled.div`
     > p {
         font-size: 18px;
         color: var(--text-secondary);
+    }
+
+    @media (max-width: 768px) {
+        gap: 8px;
+
+        > h2 {
+            font-size: 24px;
+        }
+
+        > p {
+            font-size: 16px;
+        }
     }
 `;
 
@@ -70,9 +93,28 @@ export const SocialMedia = styled.div`
     }
 `;
 
+export const ScrollMessage = styled.div`
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+`;
+
 const IconCSS = css`
     width: 36px;
     height: 36px;
+    fill: var(--accent);
+    flex-shrink: 0;
+`;
+
+export const ScrollIcon = styled(BsChevronDoubleDown)`
+    width: 28px;
+    height: 28px;
     fill: var(--accent);
     flex-shrink: 0;
 `;

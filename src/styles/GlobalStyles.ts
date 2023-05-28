@@ -34,6 +34,7 @@ export const GlobalStyles = createGlobalStyle`
 	}
 
     :root{
+        scroll-behavior: smooth;
 		${(props) => {
             const theme = props.theme;
             let append = "";

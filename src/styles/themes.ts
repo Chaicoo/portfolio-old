@@ -5,8 +5,8 @@ export const themes = {
         gray: "#afafaf",
         "gray-light": "#6a737d",
         "gray-dark": "#24292e",
-        orange: "#f9826c",
         purple: "#8257e5",
+        text: "#262525",
 
         logo: "#fff",
         "text-secondary": "#666",
@@ -15,12 +15,9 @@ export const themes = {
         icon: "#6a737d",
         link: "#0366d6",
         border: "#a9acaf",
-        ticker: "rgba(209,213,218,.5)",
 
-        sun: "#f1e05a",
-        moon: "#2b7489",
 
-        background: "#eee8d5",
+        background: "#E8E6E6",
         "background-image": "url('./images/bgLight.jpg')",
         titles: "#2d2d2e",
         accent: "#0880AE",
@@ -35,8 +32,8 @@ export const themes = {
         gray: "#afafaf",
         "gray-light": "#6a737d",
         "gray-dark": "#c6c6c6",
-        orange: "#fff",
         purple: "#8257e5",
+        text: "#E8E6E6",
 
         logo: "#fff",
         "text-secondary": "#9b9b9b",
@@ -44,14 +41,10 @@ export const themes = {
         placeholder: "#c6c6c6",
         icon: "#9b9b9b",
         link: "rgb(79, 140, 201)",
-        border: "#343434",
-        ticker: "rgba(90, 90, 90, .5)",
-
-        sun: "#f1e05a",
-        moon: "#2b7489",
+        border: "#262525",
 
         card: "#121619",
-        background: "#1C2025",
+        background: "#333333",
         "background-image": "url('./images/bgDark.jpg')",
         titles: "#D6E1DF",
         accent: "#8A85FF",

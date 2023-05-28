@@ -10,6 +10,8 @@ import {
     LinkedinIcon,
     GithubIcon,
     MailIcon,
+    ScrollMessage,
+    ScrollIcon,
 } from "./styles";
 import { Link } from "react-router-dom";
 import { DownloadButton } from "..";
@@ -36,11 +38,17 @@ export const SideContent: React.FC = () => {
                 <Link to="https://www.linkedin.com/in/francisco-gab/">
                     <LinkedinIcon />
                 </Link>
-                <Link to="mailto:gabriellima27@gmail.com">
+                <Link to="mailto:franciscolima.dev@gmail.com">
                     <MailIcon />
                 </Link>
             </SocialMedia>
             <DownloadButton />
+            <ScrollMessage>
+                <span>
+                    <strong>Deseja ver mais?</strong> Role para baixo 
+                </span>
+                <ScrollIcon />
+            </ScrollMessage>
         </Container>
     );
 };

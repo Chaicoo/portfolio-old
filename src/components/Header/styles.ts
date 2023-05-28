@@ -7,17 +7,21 @@ export const Container = styled.div`
     background: var(--background);
     padding: 12px 16px;
     border-bottom: 1px solid var(--accent);
-    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.4);
     height: 4.5rem;
     justify-content: space-between;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 9;
+
+    @media (max-width: 768px) {
+        padding: 12px 8px;
+        justify-content: center;
+    }
 `;
 
 export const SunIcon = styled(BsFillSunFill)`
-    fill: var(--sun);
+    fill: var(--accent);
     width: 32px;
     height: 32px;
     flex-shrink: 0;
@@ -96,6 +100,10 @@ export const LinksButtons = styled.div`
             opacity: 0.8;
             transform: scale(1.1);
         }
+    }
+
+    @media (max-width: 768px) {
+        display: none;
     }
 `;
 

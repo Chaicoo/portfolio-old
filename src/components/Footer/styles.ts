@@ -1,11 +1,5 @@
-import {
-    AiFillHeart,
-    AiFillLinkedin,
-    AiFillInstagram,
-    AiFillGithub,
-    AiFillMail,
-} from "react-icons/ai";
-import styled, { css } from "styled-components";
+import { AiFillHeart } from "react-icons/ai";
+import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
@@ -20,22 +14,6 @@ export const Line = styled.div`
     max-width: 1280px;
     width: 100%;
     border-top: 2px solid var(--border);
-    margin-bottom: 24px;
-`;
-
-export const SocialMedia = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 16px;
-    gap: 40px;
-
-    > a {
-        transition: opacity 0.2s;
-        &:hover {
-            opacity: 0.7;
-        }
-    }
 `;
 
 export const MadeBy = styled.p`
@@ -65,32 +43,9 @@ export const CopyRight = styled.p`
     line-height: 1.5;
 `;
 
-const IconCSS = css`
-    width: 36px;
-    height: 36px;
-    fill: var(--accent);
-    flex-shrink: 0;
-`;
-
 export const HeartIcon = styled(AiFillHeart)`
     width: 24px;
     height: 24px;
     margin-bottom: -4px;
     fill: var(--purple);
-`;
-
-export const LinkedinIcon = styled(AiFillLinkedin)`
-    ${IconCSS}
-`;
-
-export const InstagramIcon = styled(AiFillInstagram)`
-    ${IconCSS}
-`;
-
-export const MailIcon = styled(AiFillMail)`
-    ${IconCSS}
-`;
-
-export const GithubIcon = styled(AiFillGithub)`
-    ${IconCSS}
 `;

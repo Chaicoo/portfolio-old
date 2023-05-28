@@ -5,6 +5,7 @@ export const Container = styled.div`
     height: 100%;
     max-width: 1120px;
     margin: 0 auto;
+    margin-top: 3rem;
     padding: 0 2rem;
     text-align: center;
 
@@ -31,5 +32,9 @@ export const Container = styled.div`
         margin-top: 50px;
         font-size: 1.2rem;
         font-weight: 700;
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 10rem;
     }
 `;

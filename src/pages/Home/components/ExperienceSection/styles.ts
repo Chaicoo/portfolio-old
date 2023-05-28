@@ -1,4 +1,6 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { SiNextdotjs, SiJavascript, SiStyledcomponents } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
 
 export const Container = styled.div`
     display: flex;
@@ -9,6 +11,11 @@ export const Container = styled.div`
     padding-top: 4.5rem;
     height: 75vh;
     width: 75%;
+
+    @media (max-width: 768px) {
+        width: 90%;
+        margin-bottom: 5rem;
+    }
 `;
 
 export const Tittle = styled.div`
@@ -60,6 +67,10 @@ export const ContainerExperience = styled.ul`
         font-weight: 500;
         text-align: left;
     }
+
+    @media (max-width: 768px) {
+        width: 90%;
+    }
 `;
 
 export const TittleExperience = styled.div`
@@ -96,11 +107,12 @@ export const TittleExperience = styled.div`
         font-size: 1.5rem;
         color: var(--text);
     }
+
 `;
 
 export const Description = styled.div`
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
@@ -113,7 +125,46 @@ export const Description = styled.div`
         padding-left: 1rem;
     }
 
-    > img{
+    > img {
         width: 300px;
     }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+`;
+
+export const CardStack = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.8rem;
+
+    @media (max-width: 768px) {
+        margin-top: 2.2rem;
+        justify-content: center;
+    }
+`;
+
+const IconCSS = css`
+    width: 32px;
+    height: 32px;
+    fill: var(--accent);
+    flex-shrink: 0;
+`;
+
+export const IconNext = styled(SiNextdotjs)`
+    ${IconCSS}
+`;
+
+export const IconReact = styled(FaReact)`
+    ${IconCSS}
+`;
+
+export const IconJavascript = styled(SiJavascript)`
+    ${IconCSS}
+`;
+
+export const IconStyled = styled(SiStyledcomponents)`
+    ${IconCSS}
 `;

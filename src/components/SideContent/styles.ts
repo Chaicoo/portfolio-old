@@ -11,9 +11,21 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 480px;
     margin: 0 auto;
     min-height: 100vh;
+
+    > button {
+        position: absolute;
+        top: 80px;
+        left: 15px;
+        font-size: 24px;
+    }
+
+    @media (min-width: 768px) {
+        > button {
+            display: none;
+        }
+    }
 `;
 
 export const ImageContainer = styled.div`
@@ -42,7 +54,7 @@ export const Text = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 16px;
+    margin-top: 4px;
     text-align: center;
 
     > h2 {
@@ -88,7 +100,7 @@ export const Text = styled.div`
 
 export const Line = styled.div`
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 8px;
     width: 100%;
     border-top: 2px solid var(--border);
 
@@ -101,7 +113,7 @@ export const SocialMedia = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 36px;
+    margin-top: 24px;
     gap: 40px;
 
     > a {

@@ -6,7 +6,7 @@ type Props = {
 	children: React.ReactNode;
 };
 
-const scrollThreshold = 300;
+const scrollThreshold = 250;
 
 declare global {
 	interface Window {

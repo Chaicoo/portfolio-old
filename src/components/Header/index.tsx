@@ -42,9 +42,6 @@ export const Header: React.FC<Props> = ({ themeName, setThemeName }) => {
                     </>
                 ) : (
                     <>
-                        <Scroll to="skills" smooth={true} duration={1000}>
-                            Conhecimentos
-                        </Scroll>
                         <Scroll to="projects" smooth={true} duration={1000}>
                             Projetos
                         </Scroll>

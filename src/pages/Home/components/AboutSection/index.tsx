@@ -6,7 +6,7 @@ export const AboutSection: React.FC = () => {
     return (
         <Container>
             <Wrapper>
-                <span className="wellcome">Bem vindo, me chamo</span>
+                <span className="wellcome">👋🏼 Bem vindo, me chamo</span>
                 <span className="name">
                     Francisco <span className="secondName">Lima</span>
                 </span>

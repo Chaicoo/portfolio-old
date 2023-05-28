@@ -10,7 +10,6 @@ import styled, { css } from "styled-components";
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    height: 100%;
     align-items: center;
 
     @media (min-width: 1024px) {
@@ -36,7 +35,7 @@ export const ImageContainer = styled.div`
     }
 
     @media (max-width: 768px) {
-        margin-top: 150px;
+        margin-top: 100px;
     }
 `;
 
@@ -44,12 +43,19 @@ export const Text = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 36px;
-    gap: 4px;
+    margin-top: 16px;
 
     > h2 {
         font-size: 28px;
         font-weight: 600;
+    }
+
+    > span {
+        font-size: 20px;
+        color: var(--text-secondary);
+        margin: 0 auto;
+        padding: 0 2rem;
+        text-align: center;
     }
 
     > p {
@@ -64,8 +70,12 @@ export const Text = styled.div`
             font-size: 24px;
         }
 
-        > p {
+        > span {
             font-size: 16px;
+        }
+
+        p {
+            display: none;
         }
     }
 
@@ -110,7 +120,6 @@ export const ScrollMessage = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 12px;
-
 `;
 
 const IconCSS = css`

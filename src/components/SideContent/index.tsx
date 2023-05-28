@@ -20,11 +20,20 @@ export const SideContent: React.FC = () => {
     return (
         <Container>
             <ImageContainer>
-                <img src="https://avatars.githubusercontent.com/u/55364296?v=4" alt="profile" />
+                <img
+                    src="https://avatars.githubusercontent.com/u/55364296?v=4"
+                    alt="profile"
+                />
             </ImageContainer>
 
             <Text>
+                <span>👋🏼 Bem vindo, me chamo</span>
                 <h2>Francisco Gabriel Noleto Lima</h2>
+                <span>
+                    tenho 21 anos e sou apaixonado por programação desde os 15
+                    anos, especializado em desenvolvimento Front-End com ReactJs
+                    e focado em criar soluções intuitivas e impactantes.
+                </span>
                 <p>Desenvolvedor Front-End Jr</p>
                 <Line />
             </Text>
@@ -45,7 +54,7 @@ export const SideContent: React.FC = () => {
             <DownloadButton />
             <ScrollMessage>
                 <span>
-                    <strong>Deseja ver mais?</strong> Role para baixo 
+                    <strong>Deseja ver mais?</strong> Role para baixo
                 </span>
                 <ScrollIcon />
             </ScrollMessage>

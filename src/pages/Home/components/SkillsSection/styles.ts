@@ -31,6 +31,11 @@ export const Container = styled.div`
         border-bottom: 2px solid var(--accent);
         width: 25%;
     }
+
+    @media (max-width: 768px) {
+        height: 100%;
+        margin-top: 8rem;
+    }
 `;
 
 export const ContainerSkills = styled.div`

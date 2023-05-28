@@ -23,7 +23,7 @@ export const Wrapper = styled.div`
     }
 
     .name {
-        font-size: 4rem;
+        font-size: 5rem;
         font-weight: bold;
 
         .secondName {

@@ -13,10 +13,10 @@ export const SkillsSection: React.FC = () => {
         <Container>
             <Tittle>
                 <span data-aos="zoom-in" className="subTittle">
-                    Veja um pouco dos meus
+                    Veja um pouco das minhas
                 </span>
                 <span data-aos="zoom-in" className="tittle">
-                    Conhecimentos
+                    Competências
                 </span>
             </Tittle>
             <ContainerSkills data-aos="fade-right">
@@ -28,7 +28,8 @@ export const SkillsSection: React.FC = () => {
                     Conhecimentos em design responsivo, mobile-first e UI/UX.
                 </li>
                 <li>
-                    Desenvolvimento de aplicações usando JavaScript e TypeScript.
+                    Desenvolvimento de aplicações usando JavaScript e
+                    TypeScript.
                 </li>
                 <li>Desenvolvimento de aplicações web com React e Next.js.</li>
                 <li>

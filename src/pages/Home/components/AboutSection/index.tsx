@@ -16,7 +16,7 @@ export const AboutSection: React.FC = () => {
                     e focado em criar soluções intuitivas e impactantes.
                 </span>
                 <Scroll to="skills" smooth={true} duration={1000}>
-                    Veja meus conhecimentos
+                    Veja minhas competências
                 </Scroll>
             </Wrapper>
         </Container>

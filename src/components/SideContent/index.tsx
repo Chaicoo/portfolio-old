@@ -11,7 +11,6 @@ import {
     GithubIcon,
     MailIcon,
     ScrollMessage,
-    ScrollIcon,
 } from "./styles";
 import { Link } from "react-router-dom";
 import { DownloadButton } from "..";
@@ -56,7 +55,6 @@ export const SideContent: React.FC = () => {
                 <span>
                     <strong>Deseja ver mais?</strong> Role para baixo
                 </span>
-                <ScrollIcon />
             </ScrollMessage>
         </Container>
     );

@@ -59,6 +59,7 @@ export const Wrapper = styled.div`
         &:hover {
             background-color: var(--text);
             color: var(--button);
+            box-shadow: 0 0 20px var(--accent);
         }
     }
 `;

@@ -126,11 +126,19 @@ export const Description = styled.div`
     }
 
     > img {
-        width: 300px;
+        width: 360px;
     }
 
     @media (max-width: 768px) {
         flex-direction: column;
+
+        > p {
+            font-size: 1rem;
+        }
+
+        > img {
+            width: 320px;
+        }
     }
 `;
 

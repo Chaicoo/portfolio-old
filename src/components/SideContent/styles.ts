@@ -4,7 +4,6 @@ import {
     AiFillGithub,
     AiFillMail,
 } from "react-icons/ai";
-import { BsChevronDoubleDown } from "react-icons/bs";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
@@ -124,10 +123,6 @@ const IconCSS = css`
     height: 36px;
     fill: var(--accent);
     flex-shrink: 0;
-`;
-
-export const ScrollIcon = styled(BsChevronDoubleDown)`
-    ${IconCSS}
 `;
 
 export const LinkedinIcon = styled(AiFillLinkedin)`

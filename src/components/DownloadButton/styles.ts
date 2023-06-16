@@ -16,7 +16,7 @@ export const Container = styled.div`
         color: var(--text);
         padding: 8px;
         border-radius: 4px;
-        border: 2px solid #262525;
+        border: 1px solid #262525;
         transition: all 0.2s;
 
         &:hover {

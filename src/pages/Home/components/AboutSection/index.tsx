@@ -8,7 +8,7 @@ export const AboutSection: React.FC = () => {
             <Wrapper>
                 <span className="wellcome">👋🏼 Bem vindo, me chamo</span>
                 <span className="name">
-                    Francisco <span className="secondName">Lima</span>
+                    Francisco <span className="secondName">Nolêto</span>
                 </span>
                 <span className="text">
                     tenho 21 anos e sou apaixonado por programação desde os 15

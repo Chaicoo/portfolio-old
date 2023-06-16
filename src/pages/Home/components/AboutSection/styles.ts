@@ -27,7 +27,9 @@ export const Wrapper = styled.div`
         font-weight: bold;
 
         .secondName {
-            color: var(--accent);
+            background-image: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
 
@@ -51,15 +53,16 @@ export const Wrapper = styled.div`
         color: var(--text);
         padding: 8px;
         border-radius: 4px;
-        border: 2px solid #262525;
+        border: 1px solid #262525;
         transition: all 0.2s;
-        box-shadow: 0 0 5px var(--accent);
+        box-shadow: 0 0 20px var(--accent);
         backdrop-filter: blur(10px);
         
         &:hover {
             background-color: var(--text);
             color: var(--button);
-            box-shadow: 0 0 20px var(--accent);
+            border: 1px solid var(--text);
+            box-shadow: 0 0 40px var(--accent);
         }
     }
 `;

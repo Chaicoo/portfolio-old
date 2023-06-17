@@ -1,11 +1,27 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { APIRepo } from "../../../../@types";
-import { Container } from "./styles";
+import {
+    CardStack,
+    Container,
+    IconCss,
+    IconHtml,
+    IconJavascript,
+    IconReact,
+    IconStyled,
+    IconTypescript,
+    Tittle,
+} from "./styles";
 import { Link } from "react-router-dom";
 import Card from "../Card";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export const TopProjectsSection: React.FC = () => {
+    useEffect(() => {
+        Aos.init({ duration: 1500 });
+    }, []);
+
     const [repos, setRepos] = useState<APIRepo[]>([]);
 
     useEffect(() => {
@@ -18,7 +34,7 @@ export const TopProjectsSection: React.FC = () => {
                     (repo) =>
                         repo.name === "github-ui-react" ||
                         repo.name === "Maratona-Discover" ||
-                        repo.name === "Baralho-de-cartas-Pokemon"
+                        repo.name === "dropbox-ui"
                 );
 
                 setRepos(filteredRepos);
@@ -31,11 +47,63 @@ export const TopProjectsSection: React.FC = () => {
     }, []);
     return (
         <Container>
-            <span>Meus projetos</span>
-            <ul>
+            <Tittle>
+                <span data-aos="zoom-in" className="subTittle">
+                    Veja meus
+                </span>
+                <span data-aos="zoom-in" className="tittle">
+                    Projetos
+                </span>
+            </Tittle>
+            <ul data-aos="fade-right">
                 {repos.map((repo) => (
                     <li key={repo.name}>
-                        <Card name={repo.name} url={repo.html_url} description={repo.description} />
+                        <Card
+                            image={
+                                repo.name === "github-ui-react"
+                                    ? "images/github_clone_ui.png"
+                                    : repo.name === "Maratona-Discover"
+                                    ? "images/maratona_discover.png"
+                                    : "images/dropbox_clone_ui.png"
+                            }
+                            demo={
+                                repo.name === "github-ui-react"
+                                    ? "https://github-ui-green.vercel.app/"
+                                    : repo.name === "Maratona-Discover"
+                                    ? "https://maratona-discover-two.vercel.app/"
+                                    : "https://dropbox-ui.vercel.app/"
+                            }
+                            name={
+                                repo.name === "github-ui-react"
+                                    ? "GitHub UI Clone"
+                                    : repo.name === "Maratona-Discover"
+                                    ? "Maratona Discover"
+                                    : "Dropbox UI Clone"
+                            }
+                            url={repo.html_url}
+                            description={repo.description}
+                            children={
+                                repo.name === "github-ui-react" ? (
+                                    <CardStack>
+                                        <IconReact />
+                                        <IconTypescript />
+                                        <IconStyled />
+                                    </CardStack>
+                                ) : repo.name === "Maratona-Discover" ? (
+                                    <CardStack>
+                                        <IconJavascript />
+                                        <IconHtml />
+                                        <IconCss />
+                                    </CardStack>
+                                ) : (
+                                    <CardStack>
+                                        <IconReact />
+                                        <IconTypescript />
+                                        <IconStyled />
+                                    </CardStack>
+                                )
+                            }
+                        />
                     </li>
                 ))}
             </ul>

@@ -15,7 +15,8 @@ export const themes = {
         titles: "#2d2d2e",
         accent: "#4F8CC9",
         terminal: "#121619",
-        gradient: "linear-gradient(to right, #4f8cc9, #8a85ff);",
+        gradient:
+            "linear-gradient(106.33deg, #8A85FF 20.84%, #AA6EE6 54.64%, #4F8CC9 101.85%)",
     },
     dark: {
         primary: "#1D1D1D",
@@ -34,7 +35,7 @@ export const themes = {
         accent: "#8A85FF",
         terminal: "#121619",
         gradient:
-            "linear-gradient(60deg, rgba(79,140,201,1) 0%, rgba(138,133,255,1) 92%)",
+            "linear-gradient(106.33deg, #8A85FF 20.84%, #AA6EE6 54.64%, #4F8CC9 101.85%)",
     },
 };
 

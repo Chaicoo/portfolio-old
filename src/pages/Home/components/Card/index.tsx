@@ -1,37 +1,32 @@
-import React, { useState } from "react";
-import { Container } from "./styles";
-import Modal from "../Modal";
+import React from "react";
+import { Container, ContainerLinks } from "./styles";
 
 interface CardProps {
     name: string;
     url: string;
     description?: string;
+    image: string;
+    demo?: string;
+    children?: React.ReactNode;
 }
 
-const Card: React.FC<CardProps> = ({ name, url, description }) => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-
-    const handleCardClick = () => {
-        setIsModalOpen(true);
-    };
-
-    const closeModal = () => {
-        setIsModalOpen(false);
-    };
+const Card: React.FC<CardProps> = ({ name, url, description, image, demo, children }) => {
     return (
         <>
-            <Container onClick={handleCardClick}>
-               
-            </Container>
-            {isModalOpen && (
-                <Modal onClose={closeModal}>
-                    <span>{name}</span>
-                    <p>{description}</p>
-                    <a href={url} target="_blank" rel="noopener noreferrer">
-                        Veja o projeto no GitHub
+            <Container>
+                <img src={image} />
+                <span>{name}</span>
+                <p>{description}</p>
+                {children}
+                <ContainerLinks>
+                    <a href={demo} target="_blank" rel="noopener noreferrer">
+                        Abrir projeto
                     </a>
-                </Modal>
-            )}
+                    <a href={url} target="_blank" rel="noopener noreferrer">
+                        Repositório
+                    </a>
+                </ContainerLinks>
+            </Container>
         </>
     );
 };
